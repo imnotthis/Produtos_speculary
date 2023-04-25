@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.right-side-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right-side-menu .perfil {
+    width: 40px;
+    height: 40px;
+}
+
+.right-side-menu .carrinho {
+    width: 40px;
+    height: 40px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 85px;
+}
+
+.left-side-menu{
+    display: flex;
+    gap: 50px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #093F61;
+}
+.line{
+    height: 1px;
+    background-color: #093F61;
+    width: 90%;
+    align-self: center;
+}
