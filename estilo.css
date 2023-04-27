@@ -54,3 +54,39 @@ nav ul li a{
     width: 90%;
     align-self: center;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 85px);
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.items{
+    align-self: flex-end;
+}
+.select-image{
+    max-width: 400px;
+}
+.select-image img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.thumbnails{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    gap: 10px;
+}
+.thumbnail img{
+    width: 100%;
+    border-radius: 10px;
+}
+.right-side{
+    width: 100%;
+}
