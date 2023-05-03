@@ -9,20 +9,6 @@
     height: 60px;
 }
 
-.right-side-menu{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.right-side-menu .perfil {
-    width: 40px;
-    height: 40px;
-}
-
-.right-side-menu .carrinho {
-    width: 40px;
-    height: 40px;
-}
 header{
     display: flex;
     flex-direction: column;
@@ -39,27 +25,13 @@ header{
     display: flex;
     gap: 50px;
 }
-nav ul li{
-    display: inline-block;
-    margin-right: 30px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #093F61;
-}
-.line{
-    height: 1px;
-    background-color: #093F61;
-    width: 90%;
-    align-self: center;
-}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: calc(100vh - 85px);
+    gap: 100px;
 }
 .left-side{
     display: flex;
@@ -82,6 +54,7 @@ nav ul li a{
     justify-content: space-evenly;
     max-width: 400px;
     gap: 10px;
+    width: 180px;
 }
 .thumbnail img{
     width: 100%;
@@ -92,6 +65,15 @@ nav ul li a{
     display: flex;
     flex-direction: column;
 }
+
+.content{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 .right-side h6{
     color: #1071AD;
 
@@ -100,6 +82,12 @@ nav ul li a{
     color: #093F61;
     font-size: 14px;
 }
+
+.prices{
+    display: flex;
+    flex-direction: column;
+}
+
 .price{
     font-size: 16px;
     font-weight: 700;
@@ -108,10 +96,43 @@ nav ul li a{
     font-size: 12px;
     color: #ccc;
 }
+
+.options {
+    display: flex;
+    gap: 20px;
+}
+
+/*Comando do estilo de mais e menos para o carrinho*/
 .amount{
     display: flex;
     align-items: center;
     gap: 30px;
     background-color: #ffffff;
+    padding: 10px 20px;
     width: fit-content;
+    border-radius: 10px;
+}
+.amount span{
+    font-weight: 700;
+    font-size: 12px;
+}
+.minus, .plus{
+    cursor: pointer;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #093F61;
+    padding: 10px 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.button img{
+    width: 14px;
 }
