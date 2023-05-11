@@ -4,18 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    left: 0;
+    top: 0;
+    max-width: 360px;
+    max-height: 740px;
+    display: flex;
+    justify-content: center;
+}
+
 .logo img{
     width: 60px;
     height: 60px;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-}
 .menu{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 5%;
     height: 85px;
@@ -23,45 +27,49 @@ header{
 
 .left-side-menu{
     display: flex;
-    gap: 50px;
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    flex-direction: column;
+    width: 80%;
     height: calc(100vh - 85px);
-    gap: 100px;
 }
 .left-side{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
 }
 .items{
-    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .select-image{
-    max-width: 400px;
+    max-width: 200px;
 }
 .select-image img{
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
 
 }
 .thumbnails{
     display: flex;
     justify-content: space-evenly;
-    max-width: 400px;
+    max-width: 200px;
     gap: 10px;
     width: 180px;
 }
 .thumbnail img{
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
 }
 .right-side{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
@@ -99,6 +107,8 @@ header{
 
 .options {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -106,18 +116,21 @@ header{
 .amount{
     display: flex;
     align-items: center;
-    gap: 30px;
-    background-color: #ffffff;
+    justify-items: center;
     padding: 10px 20px;
-    width: fit-content;
+    width: 130px;
     border-radius: 10px;
+    justify-content: space-between;
 }
 .amount span{
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 12px;
 }
 .minus, .plus{
     cursor: pointer;
+    width: 30px;
 }
 .button{
     display: inline-block;
@@ -135,4 +148,17 @@ header{
 }
 .button img{
     width: 14px;
+}
+
+.seta {
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+.seta img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
